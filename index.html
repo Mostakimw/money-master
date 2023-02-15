@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center text-5xl font-bold text-teal-600 mt-5">Money Master</h1>
+    </header>
+    <main class="mt-20 w-9/12 mx-auto">
+        <section class="grid grid-cols-12 gap-10">
+            <div class="col-span-7">
+                <img class="w-full" src="./money.png" alt="">
+            </div>
+            <div class="bg-gray-100 text-center col-span-5">
+                <!-- ! income  -->
+                <div class="pt-10">
+                    <h3 class="text-2xl font-semibold mb-3">Income</h3>
+                    <p class="text-xl font-medium">Income:
+                        <input id="income-input" class="bg-slate-300 w-7/12 h-10 rounded text-center" type="text"
+                            name="income" id="income-input">
+                    </p>
+                </div>
+                <!-- ! expenses  -->
+                <div>
+                    <h3 class="text-2xl font-semibold mt-4 mb-4">Expenses</h3>
+                    <p class="text-xl font-medium">Food:
+                        <input id="food-input" class="bg-slate-300 w-7/12 h-10 mb-3 rounded text-center" type="text"
+                            name="income" id="income-input">
+                    </p>
+                    <p class="text-xl font-medium">Rent:
+                        <input id="rent-input" class="bg-slate-300 w-7/12 h-10 mb-3 rounded text-center" type="text"
+                            name="income" id="income-input">
+                    </p>
+                    <p class="text-xl font-medium">Clothes:
+                        <input id="clothes-input" class="bg-slate-300 w-7/12 h-10 rounded text-center" type="text"
+                            name="income" id="income-input">
+                    </p>
+                </div>
+                <!-- !calculate btn  -->
+                <button id="calculate-btn"
+                    class="bg-teal-400 mt-8 px-12 py-3 rounded-md font-semibold text-2xl text-white">Calculate</button>
+                <h2 class="text-2xl font-semibold mt-5">Total Expenses: <span id="total-expense">00</span></h2>
+                <h2 class="text-2xl font-semibold mt-5">Balance: <span id="balance">00</span></h2>
+                <!-- ! save  -->
+                <div>
+                    <p class="text-xl font-medium mt-8">Save:
+                        <input id="save-input" class="bg-slate-300 w-2/12 h-10 mb-3 rounded text-center" type="text"
+                            name="income" id="income-input">
+                        <span class="px-2">%</span>
+                        <button id="save-btn"
+                            class="bg-teal-400  px-12 py-1 rounded-md font-semibold text-2xl text-white">Save</button>
+                    </p>
+                </div>
+                <h2 class="text-2xl font-semibold mt-5">Saving Amount: <span id="saving-amount">00</span></h2>
+                <h2 class="text-2xl font-semibold mt-5">Remaining Balance: <span id="remaining-balance">00</span></h2>
+            </div>
+        </section>
+    </main>
+
+    <!-- js file linked  -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
